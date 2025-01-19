@@ -1,7 +1,6 @@
 {
   "extends": "@tranyu_nextjs_starter/typescript-config/base.json",
   "compilerOptions": {
-    "jsx": "react-jsx",
     "outDir": "dist"
   },
   "include": ["src"],

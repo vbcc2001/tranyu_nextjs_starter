@@ -1,0 +1,25 @@
+{
+  "name": "@tranyu-nextjs-starter/utils",
+  "version": "1.0.0",
+  "description": "@tranyu-nextjs-starter/utils",
+  "private": false,
+  "publishConfig": { "access": "public" },
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": [],
+  "author": "vbcc2001",
+  "license": "ISC",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint . --max-warnings 0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3 || 注释: 支持TS代码开发"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TranYu-AI/tranyu_nextjs_starter.git"
+  }
+}
