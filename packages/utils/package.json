@@ -1,6 +1,6 @@
 {
   "name": "@tranyu-nextjs-starter/utils",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "@tranyu-nextjs-starter/utils",
   "private": false,
   "publishConfig": { "access": "public" },
@@ -14,6 +14,7 @@
   "scripts": {
     "build": "tsc",
     "lint": "eslint . --max-warnings 0",
+    "check-types": "tsc --noEmit",
     "prepare": "npm run build"
   },
   "devDependencies": {

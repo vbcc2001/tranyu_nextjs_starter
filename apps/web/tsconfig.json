@@ -1,5 +1,5 @@
 {
-  "extends": "@tranyu-nextjs-starter/config/tsconfig.base.json",
+  "extends": "@tranyu-nextjs-starter/config/tsconfig.advanced.json",
   "compilerOptions": {
     "plugins": [{ "name": "next" }],
     "module": "ESNext",

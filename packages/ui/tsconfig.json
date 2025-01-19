@@ -1,6 +1,7 @@
 {
-  "extends": "@tranyu-nextjs-starter/config/tsconfig.base.json",
+  "extends": "@tranyu-nextjs-starter/config/tsconfig.advanced.json",
   "compilerOptions": {
+    "skipLibCheck": true, //不跳过有的依赖会报错
     "jsx": "react-jsx",
     "outDir": "dist"
   },

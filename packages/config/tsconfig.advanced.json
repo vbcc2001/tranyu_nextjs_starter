@@ -1,4 +1,5 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
     /* ------------------------------------------------------------------------------------------ */  
     /* --------------------------------------Compilation 编译------------------------------------ */  
@@ -48,7 +49,8 @@
     "noUnusedLocals": true,  // 不允许存在未使用的局部变量
     "noUnusedParameters": true,  // 不允许存在未使用的函数参数
     "noFallthroughCasesInSwitch": true,  // 防止在switch语句中存在fallthrough情况
-    "noUncheckedSideEffectImports": true,  // 防止导入可能导致副作用的模块
+    // 启动后编译会报错：../config/tsconfig.md.json(52,5): error TS5023: Unknown compiler option 'noUncheckedSideEffectImports'.
+    // "noUncheckedSideEffectImports": true,  // 防止导入可能导致副作用的模块
 
     /* ------------------------------------------------------------------------------------------ */  
     /* ---------------------------------------plugins 插件配置------------------------------------ */  
@@ -57,6 +59,7 @@
   },
 
   "include": ["src"], // 指定编译器需要包含的文件或目录
+  "exclude": ["node_modules", "dist"] // 指定编译器不需要包含的文件或目录
 }
 
 
