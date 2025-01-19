@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "@tranyu-nextjs-starter/eslint-config": "*",
-    "@tranyu-nextjs-starter/typescript-config": "*",
+    "@tranyu-nextjs-starter/config": "*",
     "@turbo/gen": "^1.12.4",
     "@types/node": "^20.11.24",
     "@types/react": "18.3.0",

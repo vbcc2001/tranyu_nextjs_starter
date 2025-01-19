@@ -1,5 +1,5 @@
 {
-  "extends": "@tranyu-nextjs-starter/typescript-config/nextjs.json",
+  "extends": "@tranyu-nextjs-starter/config/nextjs.json",
   "compilerOptions": {
     "plugins": [
       {
