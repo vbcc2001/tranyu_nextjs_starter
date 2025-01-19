@@ -1,21 +1,21 @@
 {
-  "$schema": "https://turbo.build/schema.json",  // 指定配置文件使用的 JSON Schema，用于验证配置的正确性
-  "ui": "tui",  // 用户界面类型，可能指 Turborepo 使用的 UI 选项（例如 TUI，即文本用户界面）
+  "$schema": "https://turbo.build/schema.json",
+  "ui": "tui",
   "tasks": {
     "build": {
-      "dependsOn": ["^build"],  // 此任务依赖于所有上级（父级）项目的 build 任务
-      "inputs": ["$TURBO_DEFAULT$", ".env*"],  // 构建任务的输入，包括默认的 Turborepo 输入和所有以 .env 开头的文件
-      "outputs": [".next/**", "!.next/cache/**"]  // 构建任务的输出，包含 .next 目录下的所有文件，但排除 .next/cache 目录
+      "dependsOn": ["^build"],
+      "inputs": ["$TURBO_DEFAULT$", ".env*"],
+      "outputs": [".next/**", "!.next/cache/**"]
     },
     "lint": {
-      "dependsOn": ["^lint"]  // 此任务依赖于所有上级（父级）项目的 lint 任务
+      "dependsOn": ["^lint"]
     },
     "check-types": {
-      "dependsOn": ["^check-types"]  // 此任务依赖于所有上级（父级）项目的 check-types 任务
+      "dependsOn": ["^check-types"]
     },
     "dev": {
-      "cache": false,  // 开发任务不使用缓存
-      "persistent": true  // 开发任务保持持续运行，不会因任务完成而终止
+      "cache": false,
+      "persistent": true
     }
   }
 }
