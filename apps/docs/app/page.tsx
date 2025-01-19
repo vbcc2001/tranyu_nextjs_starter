@@ -1,5 +1,5 @@
 import Image, { type ImageProps } from "next/image";
-import { Button } from "@tranyu_nextjs_starter/ui/button";
+import { Button } from "@tranyu-nextjs-starter/ui/button";
 import styles from "./page.module.css";
 
 type Props = Omit<ImageProps, "src"> & {

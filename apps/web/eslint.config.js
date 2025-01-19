@@ -1,4 +1,4 @@
-import { nextJsConfig } from "@tranyu_nextjs_starter/eslint-config/next-js";
+import { nextJsConfig } from "@tranyu-nextjs-starter/eslint-config/next-js";
 
 /** @type {import("eslint").Linter.Config} */
 export default nextJsConfig;

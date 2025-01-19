@@ -1,5 +1,5 @@
 {
-  "name": "@tranyu_nextjs_starter/ui",
+  "name": "@tranyu-nextjs-starter/ui",
   "version": "0.0.0",
   "private": true,
   "exports": {
@@ -15,8 +15,8 @@
     "prepare": "npm run build"
   },
   "devDependencies": {
-    "@tranyu_nextjs_starter/eslint-config": "*",
-    "@tranyu_nextjs_starter/typescript-config": "*",
+    "@tranyu-nextjs-starter/eslint-config": "*",
+    "@tranyu-nextjs-starter/typescript-config": "*",
     "@turbo/gen": "^1.12.4",
     "@types/node": "^20.11.24",
     "@types/react": "18.3.0",
