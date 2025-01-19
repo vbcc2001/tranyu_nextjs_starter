@@ -1,6 +1,7 @@
 {
-  "extends": "@repo/typescript-config/react-library.json",
+  "extends": "@tranyu_nextjs_starter/typescript-config/react-library.json",
   "compilerOptions": {
+    "jsx": "react-jsx",
     "outDir": "dist"
   },
   "include": ["src"],
