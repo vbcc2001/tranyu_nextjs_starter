@@ -1,5 +1,7 @@
 {
   "name": "tranyu_nextjs_starter",
+  "version": "1.0.0",
+  "description": "nextjs 脚手架",
   "private": true,
   "scripts": {
     "build": "turbo build",
@@ -8,12 +10,12 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
-    "prettier": "^3.2.5",
-    "turbo": "^2.3.3",
-    "typescript": "5.5.4"
+    "prettier": "^3.4.2 || 注释: 格式化代码的工具",
+    "turbo": "^2.3.3 || 注释: 代码构建工具",
+    "typescript": "^5.7.3 || 注释: 支持TS代码开发"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "packageManager": "npm@11.0.0",
   "workspaces": [
