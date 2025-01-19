@@ -8,9 +8,11 @@
     "./code": "./src/code.tsx"
   },
   "scripts": {
+    "build": "tsc",
     "lint": "eslint . --max-warnings 0",
     "generate:component": "turbo gen react-component",
-    "check-types": "tsc --noEmit"
+    "check-types": "tsc --noEmit",
+    "prepare": "npm run build"
   },
   "devDependencies": {
     "@tranyu_nextjs_starter/eslint-config": "*",
