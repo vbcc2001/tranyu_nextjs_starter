@@ -5,7 +5,7 @@
   "publishConfig": { "access": "public" },
   "exports": {
     "./button": "./src/button.tsx",
-    "./card": "./src/card.tsx",
+    "./card": "./src/card/index.tsx",
     "./code": "./src/code.tsx"
   },
   "scripts": {
