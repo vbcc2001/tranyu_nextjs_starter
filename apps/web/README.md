@@ -14,10 +14,10 @@ npm run dev
 
 ### react 19
 ### next 15
-### tailwind CSS
+### tailwind CSS 
 
-### radix-ui 
-### ShadCN UI
+### radix-ui  UI 框架
+### ShadCN UI  直接复制，不用引用依赖包
 
-### dayjs
+### dayjs 时间工具类
 ### slate 富媒体框

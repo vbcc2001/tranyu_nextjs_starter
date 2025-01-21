@@ -14,5 +14,5 @@ export function middleware(req: NextRequest) {
 
 // 仅对需要保护的路由生效
 export const config = {
-  matcher: ["/a","/main/:path*"], // 需要保护的路由
+  matcher: ["/","/main/:path*"], // 需要保护的路由
 };
