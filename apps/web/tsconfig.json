@@ -1,7 +1,13 @@
 {
   "extends": "@tranyu-nextjs-starter/config/tsconfig.advanced.json",
   "compilerOptions": {
+    "plugins": [{ "name": "next" }],
     "paths": { "@/*": ["./*"] },
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "allowJs": true,
+    "jsx": "preserve",
+    "noEmit": true
   },
   "include": [
     "**/*.ts",
@@ -11,3 +17,31 @@
     ".next/types/**/*.ts"
   ],
 }
+
+
+// {
+//   "compilerOptions": {
+
+//     "allowJs": true,
+//     "skipLibCheck": true,
+//     "strict": true,
+//     "noEmit": true,
+//     "esModuleInterop": true,
+//     "module": "esnext",
+//     "moduleResolution": "bundler",
+//     "resolveJsonModule": true,
+//     "isolatedModules": true,
+//     "jsx": "preserve",
+//     "incremental": true,
+//     "plugins": [
+//       {
+//         "name": "next"
+//       }
+//     ],
+//     "paths": {
+//       "@/*": ["./*"]
+//     }
+//   },
+//   "include": ["app/next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+//   "exclude": ["node_modules"]
+// }
