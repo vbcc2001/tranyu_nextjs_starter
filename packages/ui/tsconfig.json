@@ -6,8 +6,6 @@
     "paths": { "@/*": ["./*"] },
     "skipLibCheck": true, //不跳过有的依赖会报错
     "jsx": "react-jsx",
-    // "esModuleInterop": true,
-    // "allowSyntheticDefaultImports": true,
     "outDir": "dist"
   },
   "include": ["src"],
