@@ -6,6 +6,7 @@
   "exports": {
     "./button": "./src/button.tsx",
     "./card": "./src/card/index.tsx",
+    "./card-header": "./src/card/card-header.tsx",
     "./code": "./src/code.tsx"
   },
   "scripts": {
@@ -15,11 +16,7 @@
     "prepare": "npm run build"
   },
   "devDependencies": {
-    "@tranyu-nextjs-starter/config": "*",
-    "@types/node": "^20.11.24",
-    "@types/react": "18.3.0",
-    "@types/react-dom": "18.3.1",
-    "typescript": "5.5.4"
+    "@tranyu-nextjs-starter/config": "*"
   },
   "dependencies": {
     "react": "^19.0.0",

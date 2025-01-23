@@ -1,6 +1,7 @@
 import * as React from "react"     
 
 import { cn } from "@tranyu-nextjs-starter/utils"
+import { ReactNode } from "react"
 
 const Card = React.forwardRef<
   HTMLDivElement,
@@ -32,7 +33,7 @@ CardHeader.displayName = "CardHeader"
 const CardTitle = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
->(({ className, ...props }, ref) => (
+>(({ children,className, ...props }, ref) => (
   <div
     ref={ref}
     className={cn("font-semibold leading-none tracking-tight", className)}
@@ -53,12 +54,23 @@ const CardDescription = React.forwardRef<
 ))
 CardDescription.displayName = "CardDescription"
 
-const CardContent = React.forwardRef<
-  HTMLDivElement,
-  React.HTMLAttributes<HTMLDivElement>
->(({ className, ...props }, ref) => (
-  <div ref={ref} className={cn("p-6 pt-0", className)} {...props} />
-))
+ interface Props {
+   children?: ReactNode;
+   type?: "submit" | "button";
+ }
+
+  const CardContent = React.forwardRef<HTMLButtonElement, Props>(({children,type,...props}, ref) => (
+   <button ref={ref} className="MyClassName" type={type} {...props}>
+     {children}
+   </button>
+ ));
+
+// const CardContent1 = React.forwardRef<
+//   HTMLDivElement,
+//   React.HTMLAttributes<HTMLDivElement>
+// >(({ children,className, ...props }, ref) => (
+//   <div ref={ref} className={cn("p-6 pt-0", className)} {...props} />
+// ))
 CardContent.displayName = "CardContent"
 
 const CardFooter = React.forwardRef<
