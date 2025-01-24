@@ -15,7 +15,11 @@
     "check-types": "tsc --noEmit",
     "prepare": "npm run build"
   },
+  "dependencies": {
+    "tailwindcss-animate": "^1.0.7 || 注释: 为 Tailwind CSS 提供动画扩展的插件"
+  },
   "devDependencies": {
-    "@tranyu-nextjs-starter/config": "*"
+    "@tranyu-nextjs-starter/config": "*",
+    "tailwindcss": "^3.4.1 || 注释: 工具优先的 CSS 框架"
   }
 }

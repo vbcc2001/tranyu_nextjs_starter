@@ -6,6 +6,3 @@ export function cn(...inputs: ClassValue[]) {
   // 使用 clsx 来动态组合类名，再通过 twMerge 来合并冲突的 Tailwind 类名
   return twMerge(clsx(inputs))
 }
-
-export const add = (a: number, b: number): number => a + b;
-export const subtract = (a: number, b: number): number => a - b;
