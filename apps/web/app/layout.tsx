@@ -25,7 +25,7 @@ export default function RootLayout({children,}: { children: React.ReactNode}) {
   return (
     <html lang="zh-cn">
       <head>
-        <link rel="icon" href="/logo.svg" type="image/svg+xml" />
+        <link rel="icon" href={AppConfig.favicon} type="image/svg+xml" />
       </head>
       {/* antialiased 启用字体的抗锯齿效果 */}
       <body className="antialiased" >

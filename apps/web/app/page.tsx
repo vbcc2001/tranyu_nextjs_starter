@@ -8,8 +8,8 @@ import React from 'react';
 export default function Page() {
   return (
     <div className="w-screen h-screen flex items-center justify-center">
-      <CardHeader className="text-xl font-bold">123</CardHeader>
-      <Image
+      <CardHeader>12311</CardHeader>
+      {/* <Image
         src="/logo.svg"
         width={64}
         height={64}
@@ -17,7 +17,7 @@ export default function Page() {
         objectFit="cover"
         quality={100}
         priority
-      />{AppConfig.title}
+      />{AppConfig.title} */}
     </div>
   )
 }

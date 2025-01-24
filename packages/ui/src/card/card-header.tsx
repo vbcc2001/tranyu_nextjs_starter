@@ -10,7 +10,7 @@ export const CardHeader = forwardRef<HTMLDivElement, CardHeaderProps>(
     return (
       <div
         ref={ref}
-        className={className || ""}
+        className={className || "text-xl font-bold"}
         {...props}
       >
         {children} {/* 渲染子元素 */}
