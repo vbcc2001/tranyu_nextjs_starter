@@ -10,7 +10,6 @@
   "keywords": [],
   "author": "vbcc2001",
   "license": "ISC",
-
   "sideEffects": [
     "**/*.css"
   ],
