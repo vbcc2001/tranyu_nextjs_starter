@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { AppConfig } from "./config";
+import "@tranyu-nextjs-starter/ui/globals.css"
 import "./globals.css";
-import "@tranyu-nextjs-starter/ui/styles.css";
-
 /**
  * 应用程序的元数据
  * @type {Metadata}

@@ -1,6 +1,7 @@
 {
   "name": "@tranyu-nextjs-starter/ui",
   "version": "1.0.1",
+  "description": "可以直接引用src中原文件使用，不需要 dev 和 build 脚本 (\"dev\": \"npm run watch:css & tsc --watch\",) ",
   "private": false,
   "publishConfig": { "access": "public" },
   "type": "module",
@@ -11,6 +12,7 @@
   "author": "vbcc2001",
   "license": "ISC",
   "exports": {
+    ".": "./src/index.ts",
     "./globals.css": "./src/styles/globals.css",
     "./ui/*": "./src/ui/*.ts",
     "./components/*": "./src/components/*.tsx"
@@ -32,7 +34,6 @@
     "@radix-ui/react-separator": "^1.1.1 || 注释: radix 分隔线组件",
     "@radix-ui/react-slot": "^1.1.1 || 注释: radix 插槽组件",
     "@radix-ui/react-tooltip": "^1.1.6 || 注释: radix 提示框组件",
-    "tailwindcss-animate": "^1.0.7 || 注释: 为 Tailwind CSS 提供动画扩展的插件",
     "class-variance-authority": "^0.7.0",
     "lucide-react": "0.456.0",
     "next-themes": "^0.4.3",
@@ -43,7 +44,10 @@
   },
   "devDependencies": {
     "@tranyu-nextjs-starter/config": "*",
-    "@tailwindcss/cli": "^4.0.0 || 注释: tailwindcss 的 构建命令插件",
+    "@tailwindcss/cli": "^4.0.0 || 注释: Tailwind CSS 的构建命令插件",
+    "tailwindcss-animate": "^1.0.7 || 注释: 为 Tailwind CSS 提供动画扩展的插件",
+    "@tailwindcss/postcss": "^4.0.0 || 注释: tailwindcss 的 PostCSS 插件",
+    "postcss": "^8.5.1 || 注释: 转换 CSS 代码的工具",
     "tailwindcss": "^4.0.0 || 注释: 工具优先的 CSS 框架"
   }
 }

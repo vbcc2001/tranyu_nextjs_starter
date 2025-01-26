@@ -1,19 +1,19 @@
 import Image from 'next/image';
 import { AppConfig } from "./config";
-import * as TyCard from "@tranyu-nextjs-starter/ui/card"
+import { TY_UI_Card } from "@tranyu-nextjs-starter/ui"
 import React from 'react';
 
 export default function Page() {
   return (
     <div className="w-screen h-screen flex items-center justify-center">
-      <TyCard.Card className="w-[350px]">
-        <TyCard.Header>
-          <TyCard.Title>CardTitle</TyCard.Title>
-          <TyCard.Description>CardDescription</TyCard.Description>
-        </TyCard.Header>
-        <TyCard.Content><div className="grid w-full items-center gap-4">CardContent</div></TyCard.Content>
-        <TyCard.Footer className="flex justify-between">CardFooter</TyCard.Footer>
-      </TyCard.Card>
+      <TY_UI_Card.Card className="w-[350px]">
+        <TY_UI_Card.Header>
+          <TY_UI_Card.Title>CardTitle</TY_UI_Card.Title>
+          <TY_UI_Card.Description>CardDescription</TY_UI_Card.Description>
+        </TY_UI_Card.Header>
+        <TY_UI_Card.Content><div className="grid w-full items-center gap-4">CardContent</div></TY_UI_Card.Content>
+        <TY_UI_Card.Footer className="flex justify-between">CardFooter</TY_UI_Card.Footer>
+      </TY_UI_Card.Card>
       <Image
         src="/logo.svg"
         width={64}
