@@ -24,6 +24,7 @@
     "@radix-ui/react-tooltip": "^1.1.6 || 注释: radix 提示框组件",
     "@tranyu-nextjs-starter/ui": "*",
     "@tranyu-nextjs-starter/utils": "*",
+    "@tailwindcss/postcss": "^4.0.0",
     "class-variance-authority": "^0.7.1 || 注释: 用于在 React 中动态生成类名的工具库",
     "clsx": "^2.1.1 || 注释: 在 React 中处理条件渲染类名小工具",
     "dayjs": "^1.11.9 || 注释: 日期处理类库",
@@ -36,6 +37,7 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.20",
     "@tranyu-nextjs-starter/config": "*"
   }
 }
