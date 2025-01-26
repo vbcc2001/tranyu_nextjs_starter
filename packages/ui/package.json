@@ -3,23 +3,41 @@
   "version": "1.0.1",
   "private": false,
   "publishConfig": { "access": "public" },
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": [],
+  "author": "vbcc2001",
+  "license": "ISC",
+
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "files": [
+    "dist"
+  ],
   "exports": {
-    "./button": "./src/button.tsx",
-    "./card": "./src/card/index.tsx",
-    "./card-header": "./src/card/card-header.tsx",
-    "./code": "./src/code.tsx"
+    "./styles.css": "./dist/index.css",
+    "./card": "./src/card/index.ts"
   },
   "scripts": {
-    "build": "tsc",
-    "lint": "eslint . --max-warnings 0",
+    "dev": "tailwindcss -i ./src/styles.css -o ./dist/index.css --watch",
+    "build": "tailwindcss -i ./src/styles.css -o ./dist/index.css",
+    "lint": "eslint src --max-warnings 0",
     "check-types": "tsc --noEmit",
     "prepare": "npm run build"
   },
   "dependencies": {
     "tailwindcss-animate": "^1.0.7 || 注释: 为 Tailwind CSS 提供动画扩展的插件"
   },
+  "peerDependencies": {
+    "react": "^19"
+  },
   "devDependencies": {
     "@tranyu-nextjs-starter/config": "*",
-    "tailwindcss": "^3.4.1 || 注释: 工具优先的 CSS 框架"
+    "@tailwindcss/cli": "^4.0.0",
+    "autoprefixer": "^10.4.20"
   }
 }
+

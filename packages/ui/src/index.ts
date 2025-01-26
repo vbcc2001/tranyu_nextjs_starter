@@ -1,7 +1,7 @@
 
-import {Card} from "./card"
+import * as TyCard from "./card/index"
 
 
 export {
-  Card,
+  TyCard
 }
