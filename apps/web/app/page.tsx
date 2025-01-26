@@ -14,6 +14,7 @@ export default function Page() {
         <TY_UI_Card.Content><div className="grid w-full items-center gap-4">CardContent</div></TY_UI_Card.Content>
         <TY_UI_Card.Footer className="flex justify-between">CardFooter</TY_UI_Card.Footer>
       </TY_UI_Card.Card>
+      <TY_UI_Card.Demo></TY_UI_Card.Demo>
       <Image
         src="/logo.svg"
         width={64}

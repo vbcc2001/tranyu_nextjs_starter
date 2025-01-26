@@ -5,15 +5,12 @@
   "private": false,
   "publishConfig": { "access": "public" },
   "type": "module",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
   "keywords": [],
   "author": "vbcc2001",
   "license": "ISC",
   "exports": {
     ".": "./src/index.ts",
-    "./globals.css": "./src/styles/globals.css",
+    "./globals.css": "./dist/styles/globals.css",
     "./ui/*": "./src/ui/*.ts",
     "./components/*": "./src/components/*.tsx"
   },
@@ -43,6 +40,7 @@
     "react": "^19"
   },
   "devDependencies": {
+    "@turbo/gen": "^2.3.4",
     "@tranyu-nextjs-starter/config": "*",
     "@tailwindcss/cli": "^4.0.0 || 注释: Tailwind CSS 的构建命令插件",
     "tailwindcss-animate": "^1.0.7 || 注释: 为 Tailwind CSS 提供动画扩展的插件",
