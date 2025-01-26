@@ -11,15 +11,14 @@
   "author": "vbcc2001",
   "license": "ISC",
   "exports": {
-    "./globals.css": "./dist/styles/globals.css",
-    "./tailwind.config": "./tailwind.config.ts",
-    "./lib/*": "./src/lib/*.ts",
-    "./components/*": "./src/components/*.tsx",
-    "./hooks/*": "./src/hooks/*.ts"
+    "./globals.css": "./src/styles/globals.css",
+    "./ui/*": "./src/ui/*.ts",
+    "./components/*": "./src/components/*.tsx"
   },
   "scripts": {
-    "dev": "@tailwindcss/cli -i ./src/styles/globals.css -o ./dist/styles/globals.css --watch",
-    "build": "@tailwindcss/cli -i ./src/styles/globals.css -o ./dist/styles/globals.css",
+    "build:css": "npx @tailwindcss/cli -i ./src/styles/globals.css -o ./dist/styles/globals.css",
+    "watch:css": "npx @tailwindcss/cli -i ./src/styles/globals.css -o ./dist/styles/globals.css --watch",
+    "build": "npm run build:css && tsc",
     "lint": "eslint src --max-warnings 0",
     "check-types": "tsc --noEmit",
     "prepare": "npm run build"
