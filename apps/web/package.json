@@ -14,14 +14,6 @@
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
-    "@radix-ui/react-avatar": "^1.1.2 || 注释: radix头像组件",
-    "@radix-ui/react-collapsible": "^1.1.2 || 注释: radix 可折叠的组件",
-    "@radix-ui/react-dialog": "^1.1.4 || 注释: radix 对话框组件",
-    "@radix-ui/react-dropdown-menu": "^2.1.4 || 注释: radix 下拉菜单组件",
-    "@radix-ui/react-label": "^2.1.1 || 注释: radix 标签组件",
-    "@radix-ui/react-separator": "^1.1.1 || 注释: radix 分隔线组件",
-    "@radix-ui/react-slot": "^1.1.1 || 注释: radix 插槽组件",
-    "@radix-ui/react-tooltip": "^1.1.6 || 注释: radix 提示框组件",
     "@tranyu-nextjs-starter/ui": "*",
     "@tranyu-nextjs-starter/utils": "*",
     "@tailwindcss/postcss": "^4.0.0",

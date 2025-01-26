@@ -1,7 +1,6 @@
 
-import * as TyCard from "./card/index"
-
+import * as TY_UI_Card from "./ui/card/index"
 
 export {
-  TyCard
+ TY_UI_Card
 }
