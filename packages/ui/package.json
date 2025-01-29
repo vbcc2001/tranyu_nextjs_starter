@@ -41,6 +41,7 @@
   },
   "devDependencies": {
     "@tranyu-nextjs-starter/config": "file:../../packages/config",
+    "@tranyu-nextjs-starter/utils": "file:../../packages/utils",
     "@tailwindcss/cli": "^4.0.0 || 注释: Tailwind CSS 的构建命令插件",
     "tailwindcss": "^4.0.0 || 注释: 工具优先的 CSS 框架"
   }
