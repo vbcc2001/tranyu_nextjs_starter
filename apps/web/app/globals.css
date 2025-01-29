@@ -1,4 +1,7 @@
-@import 'tailwindcss';
-/* @import "@tranyu-nextjs-starter/ui/globals.css"; */
+@import 'tailwindcss' source(none); /* 初始化Tailwind，关闭自动编译路径的自动扫描 */
+@import "@tranyu-nextjs-starter/ui/styles/globals.css"; /* 引入UI的CSS配置 */
+@source "."; /* 手动设置 Tailwind 编译路径  */
+@source "../components"; /* 手动设置 Tailwind 编译路径  */
+@source "../../../packages/ui/src"; /* 手动设置 Tailwind 编译路径， 源码引入的UI组件 */
 
 

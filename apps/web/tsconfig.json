@@ -2,7 +2,11 @@
   "extends": "@tranyu-nextjs-starter/config/tsconfig.advanced.json",
   "compilerOptions": {
     "plugins": [{ "name": "next" }],
-    "paths": { "@/*": ["./*"] },
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"],
+      "@tranyu-nextjs-starter/ui/*": ["../../packages/ui/src/*"]
+     },
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "allowJs": true,

@@ -10,7 +10,7 @@
   "license": "ISC",
   "exports": {
     ".": "./src/index.ts",
-    "./globals.css": "./dist/styles/globals.css",
+    "./styles/globals.css": "./src/styles/globals.css",
     "./ui/*": "./src/ui/*.ts",
     "./components/*": "./src/components/*.tsx"
   },
