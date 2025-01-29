@@ -1,11 +1,11 @@
 {
   "extends": "@tranyu-nextjs-starter/config/tsconfig.advanced.json",
   "compilerOptions": {
-    // "noEmit": false,  //开启编译
-    // "allowImportingTsExtensions":false, //关闭显示指定 .ts 或 .tsx 扩展名
+    "noEmit": false,  //开启编译
+    "allowImportingTsExtensions":false, //关闭显示指定 .ts 或 .tsx 扩展名
     "paths": { "@/*": ["./*"] },
     "skipLibCheck": true, //不跳过有的依赖会报错
-    // "jsx": "react-jsx",
+    "jsx": "react-jsx",
     "outDir": "dist"
   },
   "include": ["src", "turbo"],
