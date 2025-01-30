@@ -1,4 +1,4 @@
-import { LoginForm } from "@tranyu-nextjs-starter/ui/components/auth/login"
+import { LoginForm }  from "@/components/auth/login"
 
 export default function Page() {
   return (

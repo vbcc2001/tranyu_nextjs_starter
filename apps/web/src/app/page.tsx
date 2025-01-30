@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { AppConfig } from "./config";
+import { AppConfig } from "@/config/app.config";
 import React from 'react';
 
 export default function Page() {

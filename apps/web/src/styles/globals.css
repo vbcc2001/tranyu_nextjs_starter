@@ -3,10 +3,8 @@
 /* 引入UI的CSS配置 */
 @import "@tranyu-nextjs-starter/ui/styles/globals.css"; 
 /* 手动设置 Tailwind 编译路径  */
-@source "."; 
-/* 手动设置 Tailwind 编译路径  */
-@source "../components"; 
+@source "../"; 
 /* 手动设置 Tailwind 编译路径， 源码引入的UI组件 */
-@source "../../../packages/ui/src";
+@source "../../../../packages/ui/src";
 
 
