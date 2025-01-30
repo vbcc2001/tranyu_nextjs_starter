@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import { AppConfig } from "./config";
-import { TY_UI_Card } from "@tranyu-nextjs-starter/ui"
 import React from 'react';
 
 export default function Page() {
