@@ -5,7 +5,7 @@ import {
   SidebarGroup,
   SidebarGroupContent,
   SidebarInput,
-} from "@/components/ui/sidebar"
+} from "@tranyu-nextjs-starter/ui/components/sidebar"
 
 export function SearchForm({ ...props }: React.ComponentProps<"form">) {
   return (
